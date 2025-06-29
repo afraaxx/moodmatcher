@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoodMatcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="app-title">MoodMatcher</h1>
+    <p class="subtitle">How are you feeling today?</p>
+
+    <div class="mood-buttons">
+      <button class="mood-btn" data-mood="happy">😄 Happy</button>
+      <button class="mood-btn" data-mood="sad">😔 Sad</button>
+      <button class="mood-btn" data-mood="angry">😡 Angry</button>
+      <button class="mood-btn" data-mood="stressed">😩 Stressed</button>
+    </div>
+
+    <div class="quote-box">
+      <p id="quote-text">Select a mood to see something inspiring ✨</p>
+    </div>
+
+    <div class="controls">
+      <button id="another-btn">🔁 Show Another One</button>
+      <button id="music-btn">🎧 Toggle Music</button>
+    </div>
+
+    <div class="journal-link">
+      <a href="journal.html">📝 Go to My Private Journal</a>
+    </div>
+  </div>
+ <audio id="bg-music" loop></audio>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

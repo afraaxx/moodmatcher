@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoodMatcher – Journal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="login-section">
+    <h2 class="app-title">🔒 MoodMatcher Journal</h2>
+    <p class="subtitle">Your thoughts, privately yours.</p>
+    <input type="text" id="journal-id" placeholder="Enter ID" />
+    <input type="password" id="journal-password" placeholder="Enter Password" />
+    <button id="login-btn">🔓 Login</button>
+    <p id="login-error" style="color: red; display: none;">Incorrect ID or Password.</p>
+  </div>
+
+  <div class="container" id="journal-section" style="display: none;">
+    <h2>Hello, <span id="user-name"></span> 👋</h2>
+    <p class="subtitle" id="date-display"></p>
+
+    <label for="mood-select">Mood:</label>
+    <select id="mood-select">
+      <option value="happy">😄 Happy</option>
+      <option value="sad">😔 Sad</option>
+      <option value="angry">😡 Angry</option>
+      <option value="stressed">😩 Stressed</option>
+    </select>
+
+    <textarea id="journal-entry" rows="6" placeholder="Write your thoughts..."></textarea>
+    <div class="emoji-picker">
+  <span class="emoji">😊</span>
+  <span class="emoji">😢</span>
+  <span class="emoji">😡</span>
+  <span class="emoji">😩</span>
+  <span class="emoji">❤</span>
+  <span class="emoji">✨</span>
+  <span class="emoji">🌈</span>
+  <span class="emoji">📝</span>
+</div>
+    <button id="save-entry">💾 Save Entry</button>
+
+    <h3>Your Entries</h3>
+    <div id="entry-list"></div>
+
+    <button id="logout-btn" style="margin-top: 20px;">🔒 Logout</button>
+  </div>
+
+  <script src="journal.js"></script>
+</body>
+</html>
